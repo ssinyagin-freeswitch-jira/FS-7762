@@ -1,0 +1,19 @@
+<include>
+  <extension name="echodelay">
+    <condition field="destination_number" expression="^echodelay$">
+      <action application="set" data="jitterbuffer_msec=60:300:20"/>
+      <action application="answer"/>
+      <action application="delay_echo" data="1000"/>
+    </condition>
+  </extension>
+
+
+  <extension name="v1">
+    <condition field="destination_number" expression="^v1$">
+      <action application="answer"/>
+      <action application="playback" data="av:///srv/video/big_buck_bunny_240p_30mb.mp4"/>
+      <action application="hangup"/>
+    </condition>
+  </extension>
+  
+</include>
