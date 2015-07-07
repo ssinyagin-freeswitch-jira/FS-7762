@@ -8,7 +8,7 @@
   <X-PRE-PROCESS cmd="set" data="use_profile=internal"/>
 
   
-  <X-PRE-PROCESS cmd="set" data="global_codec_prefs=G722,PCMU,PCMA,GSM"/>
+  <X-PRE-PROCESS cmd="set" data="global_codec_prefs=H264,VP8,VP9,SILK,OPUS,PCMU,PCMA"/>
   <X-PRE-PROCESS cmd="set" data="outbound_codec_prefs=PCMU,PCMA,GSM"/>
 
 
